@@ -46,14 +46,6 @@
                     var intervalBase = 77; 
                     var bandInfos = [ 
                          Timeline.createBandInfo({
-                              intervalUnit:   Timeline.DateTime.MONTH, 
-                              eventSource:    eventSource1,
-                              date:           d,
-                              theme:          theme1,
-                              layout:         "original",   
-                              intervalPixels: intervalBase
-                         }),
-                         Timeline.createBandInfo({
                               intervalUnit:   Timeline.DateTime.YEAR, 
                               eventSource:    eventSource1,
                               date:           d,
@@ -73,8 +65,6 @@
                     bandInfos[0].highlight = true;
                     bandInfos[1].syncWith = 0;
                     bandInfos[1].highlight = true;
-                    bandInfos[2].syncWith = 0;
-                    bandInfos[2].highlight = true;
                           
                     // create the Timeline
                     tl = Timeline.create( tl_el, bandInfos, Timeline.HORIZONTAL);
