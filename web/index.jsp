@@ -23,7 +23,12 @@
           <link rel="stylesheet" type="text/css" href="timeline/timeline-bundle.css">  
           <script src="timeline/timeline-api.js?bundle=true" type="text/javascript"></script>
 
-          <!-- Since we don't have our own server, we do something tricky and load our data here as if it were a library file -->
+          <!-- republica -->
+          <script src="method.js" type="text/javascript"></script>
+          <script src="regia.js" type="text/javascript"></script>
+          <script src="republica.js" type="text/javascript"></script>
+          <script src="cesare.js" type="text/javascript"></script>
+          <script src="augusto.js" type="text/javascript"></script>
           <script src="local_data.js" type="text/javascript"></script>
 
           <script>        
@@ -36,7 +41,7 @@
                     theme1.autoWidth = true; // Set the Timeline's "width" automatically.
                     // Set autoWidth on the Timeline's first band's theme,
                     // will affect all bands.
-                    var startTime = -102;
+                    var startTime = -754;
                     var endTime = 15;
                     theme1.timeline_start = new Date(Date.UTC( startTime , 0, 1));
                     theme1.timeline_stop  = new Date(Date.UTC( endTime  , 0, 1));
@@ -51,10 +56,18 @@
                               date:           d,
                               theme:          theme1,
                               layout:         "original", 
-                              intervalPixels: intervalBase * 2
+                              intervalPixels: intervalBase
                          }),
                          Timeline.createBandInfo({
                               intervalUnit:   Timeline.DateTime.DECADE, 
+                              eventSource:    eventSource1,
+                              date:           d,
+                              theme:          theme1,
+                              layout:         "original",  
+                              intervalPixels: intervalBase * 2
+                         }),
+                         Timeline.createBandInfo({
+                              intervalUnit:   Timeline.DateTime.CENTURY, 
                               eventSource:    eventSource1,
                               date:           d,
                               theme:          theme1,
@@ -64,7 +77,9 @@
                     ];
                     bandInfos[0].highlight = true;
                     bandInfos[1].syncWith = 0;
-                    bandInfos[1].highlight = true;
+                    bandInfos[1].highlight = true; 
+                    bandInfos[2].syncWith = 1;
+                    bandInfos[2].highlight = true;
                           
                     // create the Timeline
                     tl = Timeline.create( tl_el, bandInfos, Timeline.HORIZONTAL);
