@@ -36,7 +36,7 @@
                     theme1.autoWidth = true; // Set the Timeline's "width" automatically.
                     // Set autoWidth on the Timeline's first band's theme,
                     // will affect all bands.
-                    var startTime = -64;
+                    var startTime = -102;
                     var endTime = 15;
                     theme1.timeline_start = new Date(Date.UTC( startTime , 0, 1));
                     theme1.timeline_stop  = new Date(Date.UTC( endTime  , 0, 1));
