@@ -18,23 +18,10 @@
                 href="timeline/timeline-bundle.css">
           <script src="timeline/timeline-api.js?bundle=true"></script>
 
-          <!-- economia -->
+          <!-- republica -->
           <script src="method.js"></script>
-          <script src="augusto/altri.js"></script>
-          <script src="augusto/titolo.js"></script>
-          <script src="augusto/guerra.js"></script>
-          <script src="augusto/self.js"></script>
-          <script src="augusto/economia.js"></script>
-          <script src="augusto/politico.js"></script>
-          <script>
-               var timeline_data = {
-                    "dateTimeFormat" : "Gregorian",
-                    "wikiURL" : "http://it.wikipedia.org/wiki/Augusto",
-                    "wikiSection" : "Gaio Giulio Cesare Ottaviano Augusto",
-
-                    "events" : put([ economia , politico , guerra , altri , titolo , self ])
-               };
-          </script>
+          <script src="augusto.js"></script>
+          <script src="local_data.js"></script>
 
           <script>
                var tl;
@@ -111,6 +98,8 @@
                     </script>
                </div>
           </div>
+
      </body>
+     <a href="titolo.jsp"></a>
 
 </html>

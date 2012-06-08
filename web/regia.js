@@ -5,37 +5,37 @@ var regia = [
 {
      "start" : date( "-753" ),
      "end" : date( "-716" ),
-     "title" : "Romolo",
+     "title" : "Romolo 753 - 716 a.c.",
      "description" : "1.Conquista nel Latium vetus  2.Ratto le sabine"
 },
 {
      "start" : date( "-716" ),
      "end" : date( "-640" ),
-     "title" : "Tullio Ostilio",
+     "title" : "Tullio Ostilio 716 - 640 a.c.",
      "description" : "distruzione di alba longa,guerra contro sabini"
 },
 {
      "start" : date( "-640" ),
      "end" : date( "-616" ),
-     "title" : "Anco Marzio",
+     "title" : "Anco Marzio 640 - 616 a.c.",
      "description" : "Anco Marzio"
 },
 {
      "start" : date( "-616" ),
      "end" : date( "-579" ),
-     "title" : "Lucio tarquinio prisco",
+     "title" : "Lucio tarquinio prisco 616 - 579 a.c.",
      "description" : "riforme equestoe dell`esercito romano"
 },
 {
      "start" : date( "-578" ),
      "end" : date( "-535" ),
-     "title" : "Servio Tullio",
+     "title" : "Servio Tullio 578 - 535 a.c.",
      "description" : "riforme equestoe dell`esercito romano"
 },
 {
      "start" : date( "-535" ),
      "end" : date( "-509" ),
-     "title" : "Lucio tarquinio il superbo",
+     "title" : "Lucio tarquinio il superbo 535 - 509 a.c.",
      "description" : "riforme equestoe dell`esercito romano"
 }
 ];

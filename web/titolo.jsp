@@ -18,21 +18,21 @@
                 href="timeline/timeline-bundle.css">
           <script src="timeline/timeline-api.js?bundle=true"></script>
 
-          <!-- economia -->
+          <!-- republica -->
           <script src="method.js"></script>
-          <script src="augusto/altri.js"></script>
           <script src="augusto/titolo.js"></script>
-          <script src="augusto/guerra.js"></script>
-          <script src="augusto/self.js"></script>
-          <script src="augusto/economia.js"></script>
-          <script src="augusto/politico.js"></script>
           <script>
                var timeline_data = {
                     "dateTimeFormat" : "Gregorian",
                     "wikiURL" : "http://it.wikipedia.org/wiki/Augusto",
                     "wikiSection" : "Gaio Giulio Cesare Ottaviano Augusto",
 
-                    "events" : put([ economia , politico , guerra , altri , titolo , self ])
+                    "events" : put([ titolo , [{
+                                   "start" : date("-63/9/23"),
+                                   "end" : date("14/8/19"),
+                                   "title" : "Gaio Giulio Cesare Ottaviano Augusto 23/09/63 a.c. - 19/08/14 d.c.",
+                                   "description" : "23/09/63 a.c. - 19/08/14 d.c."
+                              }]])
                };
           </script>
 
@@ -46,8 +46,8 @@
                     theme1.autoWidth = true; // Set the Timeline's "width" automatically.
                     // Set autoWidth on the Timeline's first band's theme,
                     // will affect all bands.
-                    var startTime = -71;
-                    var endTime = 20;
+                    var startTime = -64;
+                    var endTime = 15;
                     theme1.timeline_start = new Date(Date.UTC(startTime, 0, 1));
                     theme1.timeline_stop = new Date(Date.UTC(endTime, 0, 1));
                     //DECADE
@@ -111,6 +111,8 @@
                     </script>
                </div>
           </div>
+
      </body>
+     <a href="titolo.jsp"></a>
 
 </html>
